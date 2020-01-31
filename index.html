@@ -7,16 +7,19 @@
      <style>
       @import url("https://use.typekit.net/eef2asq.css");
     </style>
+    <link rel="icon" type="image/png" href="images/logo_head.png">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <main>
-      <header>
-        <nav>
+      <header class="main-header">
+        <nav class= "global-nav">
           <ul>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="index.html#works">Work</a></li>
-          </ul>
+            <li><a class="style-link" href="about.html" target="_blank">Resume</a></li>
+            <li><a class="style-link" href="about.html">About Me</a></li>
+            <li><a class="style-link" href="index.html#portfolio">Projects</a></li>
+            <li class="logo-position"><a href="index.html"><img class="nav-logo" src= "images/logo.png" alt= "Simo's logo"/></a></li>
+        </ul>
         </nav>
         <div class ="wrapper">
           <h1>Simo Paraschi</h1>
@@ -24,40 +27,41 @@
           <h4>Below you can find a selection of case studies regarding my projects so far.</h4>
         </div>
       </header>
-      <section class="portfolio">
-        <div class="first-project">
+      <section id="portfolio"> 
+        <section id="first-project">
             <a href="bespoke.html"><img src="images/bespoke.png" alt="Memories Map, Bespoke project"/></a>
             <h2 class="text-right">Bespoke Design</h2>
             <h4 class="text-right">Project going through all the Design Thinking Process</h4>
-            <h4 class="text-right"><a href="bespoke.html">View Case Study</a></h4>
-        </div>
-        <div class="second-project">
+            <h4 class="text-right"><a class="style-link" href="bespoke.html">View Case Study</a></h4>
+        </section >
+        <section  id="second-project">
             <a href="research.html"><img src="images/research.png" alt="Research project"/></a>
             <h2 class="text-left">User Research</h2>
             <h4 class="text-left">Research project focusing on empathizing</h4>
-            <h4 class="text-left"><a href="research.html">View Case Study</a></h4>
-        </div>
-        <div class="third-project">
+            <h4 class="text-left"><a class="style-link" href="research.html">View Case Study</a></h4>
+        </section >
+        <section  id="third-project">
             <a href="game.html"><img src="images/game.gif" alt="Programming project"/></a>
             <h2 class="text-right">Processing Game</h2>
             <h4 class="text-right">Programming project coded in Processing</h4>
-            <h4 class="text-right"><a href="game.html">View Case Study</h4></a>
-        </div>
-        <div class="fourth-project">
+            <h4 class="text-right"><a class="style-link" href="game.html">View Case Study</h4></a>
+        </section >
+        <section  id="fourth-project">
             <a href="photograpghy.html"><img src="images/photography.jpg" alt="Street Photography"/></a>
             <h2 class="text-left">Street Photography</h2>
             <h4 class="text-left">Capturing candid photos</h4>
-            <h4 class="text-left"><a href="photograpghy.html">View Case Study</a></h4>
-        </div>
+            <h4 class="text-left"><a class="style-link" href="photograpghy.html">View Case Study</a></h4>
+        </section >
       </section>
       <footer>
-        <div class="wrapper">
+        <div  class="wrapper">
           <h3>Let's build something together!</h3>
           <ul>
             <li><a href="mailto:simona.vargasp@gmail.com">simona.vargasp@gmail.com</a></li>
             <li><a href="https://www.linkedin.com/in/simonavargasparaschivoiu/" target="_blank"><img src="images/linkedin.png" alt="linkedin icon"></a></li>
             <li><a href="https://www.instagram.com/simo_paraschi/" target="_blank"><img src="images/instagram.png" alt="linkedin icon"></a></li>
           </ul>
+          <p>Handcrafted with care by &copy;Simo Paraschi</p>
         </div>  
       </footer>
     </main>
