@@ -29,18 +29,33 @@ h2 {
 }
 
 h3 {
-  font-size: 25px;
+  font-size:25px;
 }
-
-h4 {
+p {
   font-size: 19px;
 }
 
+.main-header {
+  background: #F1F1F1;
+}
+
 .global-nav {
+  font-size: 20px;
+}
+
+.global-nav ul {
   position: fixed;
   top: 0;
   width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
   background: #F1F1F1;
+}
+
+.global-nav li {
+  float: left;
+  padding: 20px;
 }
 
 .nav-logo {
@@ -48,86 +63,115 @@ h4 {
 }
 
 .logo-position {
-  float:left;
   margin-right:600px;
+  margin-left:80px;
 }
 
-.global-nav ul {
-  width: 1100px;
-  font-size: 20px;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  list-style-type: none;
-}
-
-.global-nav li {
-  float: right;
-  padding: 20px;
-}
-
-.main-header {
-  background: #F1F1F1;
-}
 
 .style-link {
-  text-decoration: none;
+  text-decoration: underline;
   color: #3A3535;
-  box-shadow: inset 0 -0.6em #a5d5f6;
 }
 
 .style-link:hover {
   box-shadow: inset 0 -0.6em #69baf0;
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
 }
 
 .wrapper {
- width: 600px;
+ width: 50%;
  margin: 0 auto;
- padding: 130px 0;
- text-align: left;
+ padding: 80px 0;
+ text-align: justify;
 }
 
 /* Portfolio Overview
 ------------------------------------*/
-#portfolio {
-  width: 750px;
-  margin:  0 auto;
-  padding: 130px 0;
+.project {  
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding-top:70px;
 }
 
-#portfolio  img {
+.project  img {
   -webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
 
-#portfolio  img:hover {
+.project  img:hover {
   -webkit-transform: scale(1.03);
 	transform: scale(1.03);
 }
 
-#portfolio img {
+.project img {
   float: left;
   width: 400px;
   height:300px;
-  margin:10px;
-  padding-bottom: 70px;
-}
-
-.text-right, .text-left {
-  float: right;
-  width:300px;
-  margin: 10px;
   padding-bottom: 70px;
 }
 
 /* About me
 ------------------------------------*/
 #about-me {
-
-  width: 750px;
+  width: 60%;
   margin:  0 auto;
   padding: 130px 0;
 }
+
+#about-me h2 {
+  font-weight: bold;
+}
+
+#experience h4, #education h4 {
+  color: #615d5d;
+}
+
+#experience {
+  float:left;
+  padding-right: 130px;
+}
+
+#resume {
+  clear:both;
+}
+
+
+/* Projects' Case Studies
+------------------------------------*/
+.wrapper-projects {
+ width: 900px;
+ margin: 0 auto;
+ padding: 130px 0;
+ text-align: left;
+}
+
+.wrapper-projects table {
+  float:right;
+  margin-top: -150px;
+  margin-right: 80px;
+}
+
+.wrapper-projects td {
+  padding:5px;
+  text-align:center;
+  vertical-align:top;
+}
+
+.category {
+  color: #615d5d;
+}
+
+.details {
+  font-weight: bold;
+}
+
 
 /* Contact Info
 ------------------------------------*/
@@ -136,16 +180,35 @@ footer {
   background: #F1F1F1;
 }
 
-footer ul {
-  list-style-type: none;
+.copyright{
+  font-size: 15px;
 }
 
-footer li {
+.footer-wrap {
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px 0;  
+  text-align: center;
+}
+
+.footer-wrap h4 {
+  margin: -15px;
+}
+
+.footer-wrap ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.footer-wrap li {
   float:left;
   padding: 20px
 }
 
-footer img {
+.footer-wrap img {
   width:30px;
 }
 
+.footer-wrap p {
+  clear: both;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game | Simo Paraschi</title>
+     <style>
+      @import url("https://use.typekit.net/eef2asq.css");
+    </style>
+    <link rel="icon" type="image/png" href="images/logo_head.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="/js/processing.min.js"></script>
+  </head>
+  <body>
+    <main>
+
+      <!-- ***************  NAVIGATION **************** -->
+      <header class="main-header">
+        <nav class= "global-nav">
+          <ul>
+            <li class="logo-position"><a href="index.html"><img class="nav-logo" src= "images/logo.png" alt= "Simo's logo"/></a></li>
+            <li><a class="style-link" href="index.html#portfolio">Projects</a></li>
+            <li><a class="style-link" href="about.html">About Me</a></li>
+            <li><a class="style-link" href="about.html" target="_blank">Resume</a></li>
+        </ul>
+        </nav>
+
+        <!-- ***************  PROJECT INTRO **************** -->
+        <div class ="wrapper-projects">
+          <h1>Bespoke Design</h1>
+          <h4>Bespoke DesignBespoke DesignBespoke DesignBespoke DesignBespoke </h4>
+          <table>
+            <tr>
+              <td class="category">Category</td>
+              <td class="category">Role</td>
+            </tr>
+            <tr>
+              <td class="details">Academic Project</td>
+              <td class="details">UX</td>
+            </tr> 
+          </table>  
+        </div>  
+      </header>
+
+      <!-- ***************  PROJECT CASE STUDY **************** -->
+      <section>
+        <canvas data-processing-sources= "Day_4/Day_4.pde" id="pjsCanvas" tabindex="0" width="500" height="500" style="image-rendering: -webkit-optimize-contrast !important;"></canvas>
+        <script type="text/javascript"> 
+
+float [] enemy = new float [10];
+int i;
+float x= 0;
+float y = height*2;
+int score = 0; 
+
+void setup (){
+ size(500,500);
+ noStroke();
+ ellipseMode(CORNER);
+  
+   for (int i = 0; i < enemy.length; i++) {
+   enemy [i] = random(height);
+   }
+}
+
+void draw () {
+  background (116, 159,188);
+  drawEnemies();
+  drawHero();
+  drawScore();
+  drawWin();
+  
+}
+
+void drawEnemies() {
+  fill(255);
+  
+
+  
+  for (int i = 0; i < enemy.length; i++) {
+    int enemyX=i*50+25;
+    int enemyY=int(enemy[i]);
+    rect(enemyX, enemyY, 18, 18);
+    
+  
+    float d = dist(enemyX, enemyY, x, y);
+      
+  
+      if(d<20){
+      println("hit");
+      ellipse(x,y, 12, 12);
+      x=0;
+      score=0;
+      }
+  
+    enemy [i] += int(random(8));
+    
+    if (enemy[i] > height){
+    enemy[i] = 0;  
+    }
+    
+  }
+}
+
+void drawHero() {
+  
+  fill(0);
+  ellipse (x,y, 12, 12);
+  
+  if(keyPressed){
+    if(key == 'a' || key == 'A'){
+    x-=1;
+    score--;
+  
+    } else if(key == 'd'|| key == 'D'){
+    x+=1;
+    score++;
+    }
+  }
+}
+ 
+void drawScore() {
+  rect(0, 10, score, 10);
+}
+
+void drawWin() {
+  if ( x> width){
+  println("You win!");
+  text("You Win!", width/2, height/2);
+  textSize(50);
+  }
+}
+
+         </script> 
+        
+      </section>
+
+      <!-- ***************  CONTACT INFO **************** -->
+      <footer>
+        <div  class="footer-wrap">
+          <h3>Let's build something together!</h3>
+          <h4><a class="style-link" href="mailto:simona.vargasp@gmail.com">simona.vargasp@gmail.com</a></h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/simonavargasparaschivoiu/" target="_blank"><img src="images/linkedin.png" alt="linkedin icon"></a></li>
+            <li><a href="https://www.instagram.com/simo_paraschi/" target="_blank"><img src="images/instagram.png" alt="linkedin icon"></a></li>
+            <li><a href="https://github.com/Simobla" target="_blank"><img src="images/github.png" alt="Github icon"></a></li>
+          </ul>
+          <p class="copyright">Handcrafted with care by &copy;Simo Paraschi</p>
+        </div>  
+      </footer>
+    </main>
+  </body>
+</html>

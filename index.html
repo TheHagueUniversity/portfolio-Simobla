@@ -12,56 +12,89 @@
   </head>
   <body>
     <main>
+
+      <!-- ***************  NAVIGATION **************** -->
       <header class="main-header">
         <nav class= "global-nav">
           <ul>
-            <li><a class="style-link" href="about.html" target="_blank">Resume</a></li>
-            <li><a class="style-link" href="about.html">About Me</a></li>
-            <li><a class="style-link" href="index.html#portfolio">Projects</a></li>
             <li class="logo-position"><a href="index.html"><img class="nav-logo" src= "images/logo.png" alt= "Simo's logo"/></a></li>
+            <li><a class="style-link" href="index.html#portfolio">Projects</a></li>
+            <li><a class="style-link" href="about.html">About Me</a></li>
+            <li><a class="style-link" href="about.html" target="_blank">Resume</a></li>
         </ul>
         </nav>
+
+        <!-- ***************  INTRO PROFILE **************** -->
         <div class ="wrapper">
           <h1>Simo Paraschi</h1>
-          <h4>Hi! I'm a UX Designer and photography enthousiast. I have over 3 years of experience working in the Support team for different SaaS companies and a Master's in Business.</h4>
-          <h4>Below you can find a selection of case studies regarding my projects so far.</h4>
+          <p>Hi! I'm a UX Designer and photography enthousiast. I have over 3 years of experience working in the Support team for different SaaS companies and a Master's in Business.<p>
+          <p>Below you can find a selection of case studies regarding my projects so far.</p>
         </div>
       </header>
+
+      <!-- ***************  PORTFOLIO OVERVIEW **************** -->
       <section id="portfolio"> 
-        <section id="first-project">
+
+           <!-- ***************  Project 1 **************** -->
+        <section class="project">
+          <div class = "project-image">
             <a href="bespoke.html"><img src="images/bespoke.png" alt="Memories Map, Bespoke project"/></a>
-            <h2 class="text-right">Bespoke Design</h2>
-            <h4 class="text-right">Project going through all the Design Thinking Process</h4>
-            <h4 class="text-right"><a class="style-link" href="bespoke.html">View Case Study</a></h4>
+          </div>
+            <div class="project-details"> 
+            <h2> Bespoke Design</h2>
+            <p>Project going through all the Design Thinking Process</p>
+            <p><a class="style-link" href="bespoke.html">View Case Study</a></p>
+          </div>
         </section >
-        <section  id="second-project">
+
+        <!-- ***************  Project 2 **************** -->
+        <section  class="project">
+          <div class = "project-image">
             <a href="research.html"><img src="images/research.png" alt="Research project"/></a>
-            <h2 class="text-left">User Research</h2>
-            <h4 class="text-left">Research project focusing on empathizing</h4>
-            <h4 class="text-left"><a class="style-link" href="research.html">View Case Study</a></h4>
-        </section >
-        <section  id="third-project">
+          </div>
+          <div class="project-details"> 
+            <h2> User Research</h2>
+            <p>Research project focusing on empathizing</p>
+            <p><a class="style-link" href="research.html">View Case Study</a></p>
+          </div>
+        </section>
+
+        <!-- ***************  Project 3 **************** -->
+        <section  class="project">
+          <div class = "project-image">
             <a href="game.html"><img src="images/game.gif" alt="Programming project"/></a>
-            <h2 class="text-right">Processing Game</h2>
-            <h4 class="text-right">Programming project coded in Processing</h4>
-            <h4 class="text-right"><a class="style-link" href="game.html">View Case Study</h4></a>
-        </section >
-        <section  id="fourth-project">
+          </div>
+            <div class="project-details"> 
+            <h2>Processing Game</h2>
+            <p>Programming project coded in Processing</p>
+            <p><a class="style-link" href="game.html">View Case Study</p></a>
+          </div>
+        </section>
+
+         <!-- ***************  Project 4 **************** -->
+        <section  class="project">
+          <div class = "project-image">
             <a href="photograpghy.html"><img src="images/photography.jpg" alt="Street Photography"/></a>
-            <h2 class="text-left">Street Photography</h2>
-            <h4 class="text-left">Capturing candid photos</h4>
-            <h4 class="text-left"><a class="style-link" href="photograpghy.html">View Case Study</a></h4>
+          </div>
+          <div class="project-details">
+            <h2>Street Photography</h2>
+            <p>Capturing candid photos</p>
+            <p><a class="style-link" href="photography.html">View Case Study</a></p>
+          </div>
         </section >
       </section>
+
+      <!-- ***************  CONTACT INFO **************** -->
       <footer>
-        <div  class="wrapper">
+        <div  class="footer-wrap">
           <h3>Let's build something together!</h3>
+          <p><a class="style-link" href="mailto:simona.vargasp@gmail.com">simona.vargasp@gmail.com</a></p>
           <ul>
-            <li><a href="mailto:simona.vargasp@gmail.com">simona.vargasp@gmail.com</a></li>
             <li><a href="https://www.linkedin.com/in/simonavargasparaschivoiu/" target="_blank"><img src="images/linkedin.png" alt="linkedin icon"></a></li>
             <li><a href="https://www.instagram.com/simo_paraschi/" target="_blank"><img src="images/instagram.png" alt="linkedin icon"></a></li>
+            <li><a href="https://github.com/Simobla" target="_blank"><img src="images/github.png" alt="Github icon"></a></li>
           </ul>
-          <p>Handcrafted with care by &copy;Simo Paraschi</p>
+          <p class="copyright">Handcrafted with care by &copy;Simo Paraschi</p>
         </div>  
       </footer>
     </main>
