@@ -94,6 +94,12 @@ p {
  text-align: justify;
 }
 
+.medium-bold {
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
 /* Portfolio Overview
 ------------------------------------*/
 #portfolio {
@@ -117,8 +123,8 @@ p {
 .project {  
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  padding: 20px 0;
+  gap: 35px;
+  padding: 15px 0;
 }
 
 .project  img {
@@ -133,9 +139,18 @@ p {
 
 .project img {
   float: left;
-  width:   ;
+  width: 400px;
   height:300px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
+}
+
+.project-details {
+  line-height: 25px;
+}
+
+.view {
+  padding-top: 43px;
+  font-weight: 500;
 }
 
 /* About me
@@ -154,12 +169,24 @@ p {
 }
 
 .grid-about h2 {
-  font-weight: bold;
+  color: #ffba5a;
+}
+
+.grid-about h3 {
+  padding-bottom: 6px;
+  margin:0;
+}
+
+.grid-about p {
+  padding-bottom: 25px;
+  margin:0;
 }
 
 .resume-wrapper {
   width: 100%;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .resume {
@@ -187,32 +214,22 @@ p {
 }
 
 .project-intro {
-  width: 86%;
-}
-
-.project-intro table {
-  float:right;
+  width: 32%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5%;
+  float: right;
   margin-top: -270px;
-}
-
-.project-intro td {
-  padding:5px;
-  text-align:center;
-  vertical-align:top;
 }
 
 .category {
   color: #615d5d;
 }
 
-.details {
-  font-weight: bold;
-}
-
 .case-study {
   width: 60%;
   margin: 0 auto;
-  text-align: justfiy;
+  text-align: justify;
   overflow-wrap: break-word;
 }
 
@@ -222,6 +239,58 @@ p {
 
 .case-study p {
   overflow: visible;
+}
+
+.hk-color {
+  color: #523C8C;
+  text-decoration: none;
+}
+
+.case-study-image {
+  width: 450px;
+  padding: 5px;
+}
+
+.case-study-image-position {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery {
+  margin: 10px 50px;
+}
+
+.gallery img {
+  width:200px;
+  transition: 1s;
+  padding: 9px;
+}
+
+.gallery img:hover{
+  filter:grayscale(100%);
+  transform: scale(1.2);
+}
+
+.gallery-more-wrapper {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.more-photos {
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #ffba5a;
+  border-radius: 5px;
+  padding: 8px 16px;
+  background-color: transparent;
+  color: #ffba5a;
+}
+
+.more-photos:hover {
+  color: #ffffff;
+  background-color: #ffba5a;
 }
 
 /* Contact Info
@@ -238,8 +307,18 @@ footer {
 .footer-wrap {
   width: 300px;
   margin: 0 auto;
-  padding: 5px 0;  
+  padding: 10px 0;  
   text-align: center;
+}
+
+.footer-wrap h3 {
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.footer-wrap p {
+  padding-bottom: 15px;
+  margin: 0;
 }
 
 .footer-wrap ul {
@@ -249,7 +328,7 @@ footer {
 
 .footer-wrap li {
   float:left;
-  padding: 0 20px
+  padding: 0 20px;
 }
 
 .footer-wrap img {
