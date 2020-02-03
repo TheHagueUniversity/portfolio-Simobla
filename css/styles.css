@@ -113,7 +113,7 @@ p {
 }
 
 .projects-line {
-  margin-right: 720px;
+  margin-right: 750px;
   padding-bottom: 2px;
   background-color: #ffba5a;
   margin-bottom: -20px;
@@ -229,6 +229,10 @@ p {
 .case-study {
   width: 60%;
   margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.case-study-section {
   text-align: justify;
   overflow-wrap: break-word;
 }
@@ -241,14 +245,25 @@ p {
   overflow: visible;
 }
 
+.case-details ul {
+  line-height: 25px;
+  font-size: 18px;
+  list-style-type: square;
+}
+
 .hk-color {
   color: #523C8C;
   text-decoration: none;
 }
 
-.case-study-image {
+.case-study-image-width {
   width: 450px;
-  padding: 5px;
+  padding: 6px;
+}
+
+.case-study-image-height {
+  width: 600px;
+  padding: 6px;
 }
 
 .case-study-image-position {
