@@ -31,6 +31,7 @@ h2 {
 h3 {
   font-size:25px;
 }
+
 p {
   font-size: 19px;
 }
@@ -41,30 +42,33 @@ p {
 
 .global-nav {
   font-size: 20px;
+  width:100%;
+  text-align: right;
+}
+
+.global-nav, .logo {
+  background: #F1F1F1;
+  position: fixed;
+  top: 0;
 }
 
 .global-nav ul {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 0;
-  margin: 0;
   list-style-type: none;
-  background: #F1F1F1;
+  margin-right: 150px;
 }
 
 .global-nav li {
-  float: left;
-  padding: 20px;
+  display: inline-block;
+  margin-right: 30px;
 }
 
-.nav-logo {
+.logo img {
   width: 50px;
 }
 
-.logo-position {
-  margin-right:600px;
-  margin-left:80px;
+.logo {
+  padding-top: 9px;
+  padding-left: 50px;
 }
 
 
@@ -74,13 +78,14 @@ p {
 }
 
 .style-link:hover {
-  box-shadow: inset 0 -0.6em #69baf0;
+  box-shadow: inset 0 -0.6em #ffba5a;
   text-decoration: none;
   transition-property: all;
   transition-duration: 0.15s;
   transition-timing-function: ease-out;
   transition-delay: 0s;
 }
+
 
 .wrapper {
  width: 50%;
@@ -91,13 +96,29 @@ p {
 
 /* Portfolio Overview
 ------------------------------------*/
-.project {  
+#portfolio {
   width: 60%;
   margin: 0 auto;
+  padding-top: 10px;
+}
+
+#portfolio h3 {
+  color: #757171;
+}
+
+.projects-line {
+  margin-right: 720px;
+  padding-bottom: 2px;
+  background-color: #ffba5a;
+  margin-bottom: -20px;
+  margin-top: 60px;
+}
+
+.project {  
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  padding-top:70px;
+  padding: 20px 0;
 }
 
 .project  img {
@@ -112,53 +133,69 @@ p {
 
 .project img {
   float: left;
-  width: 400px;
+  width:   ;
   height:300px;
   padding-bottom: 70px;
 }
 
 /* About me
 ------------------------------------*/
-#about-me {
+.grid-about {  
   width: 60%;
-  margin:  0 auto;
-  padding: 130px 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  padding-top:70px;
+  grid-column-gap: 1px;
 }
 
-#about-me h2 {
+.grid-about p {
+  color: #757171;
+}
+
+.grid-about h2 {
   font-weight: bold;
 }
 
-#experience h4, #education h4 {
-  color: #615d5d;
+.resume-wrapper {
+  width: 100%;
+  text-align: center;
 }
 
-#experience {
-  float:left;
-  padding-right: 130px;
+.resume {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #ffba5a;
+    border-radius: 5px;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #ffba5a;
 }
 
-#resume {
-  clear:both;
+.resume:hover {
+  color: #ffffff;
+  background-color: #ffba5a;
 }
-
 
 /* Projects' Case Studies
 ------------------------------------*/
 .wrapper-projects {
- width: 900px;
+ width: 60%;
  margin: 0 auto;
  padding: 130px 0;
- text-align: left;
+ text-align: justify;
 }
 
-.wrapper-projects table {
+.project-intro {
+  width: 86%;
+}
+
+.project-intro table {
   float:right;
-  margin-top: -150px;
-  margin-right: 80px;
+  margin-top: -270px;
 }
 
-.wrapper-projects td {
+.project-intro td {
   padding:5px;
   text-align:center;
   vertical-align:top;
@@ -172,6 +209,20 @@ p {
   font-weight: bold;
 }
 
+.case-study {
+  width: 60%;
+  margin: 0 auto;
+  text-align: justfiy;
+  overflow-wrap: break-word;
+}
+
+.case-study h3 {
+  color: #757171;;
+}
+
+.case-study p {
+  overflow: visible;
+}
 
 /* Contact Info
 ------------------------------------*/
@@ -187,12 +238,8 @@ footer {
 .footer-wrap {
   width: 300px;
   margin: 0 auto;
-  padding: 10px 0;  
+  padding: 5px 0;  
   text-align: center;
-}
-
-.footer-wrap h4 {
-  margin: -15px;
 }
 
 .footer-wrap ul {
@@ -202,7 +249,7 @@ footer {
 
 .footer-wrap li {
   float:left;
-  padding: 20px
+  padding: 0 20px
 }
 
 .footer-wrap img {
